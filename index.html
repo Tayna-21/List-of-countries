@@ -1,0 +1,40 @@
+<!DOCTYPE HTML5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="list of countries" content="List of contries. Filter by region and search by name">
+    <title>"List of countries"</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="loader"><div class="loader_icon"></div></div>
+    <div class="wrapper">
+      <div class="scroll_to_top invisible">&#710;</div>
+      <div class="container">
+        <header>
+          <h1>Where in the world?</h1>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+          <div class="search_field_container">
+            <input type="text" id="search_field" placeholder="Search for a country..." autocomplete="off">
+            <button type='button' id="search_btn"><img src="./icons/search.svg"></button>
+            <span class="error-message invisible"></span>
+          </div>
+          <div class="dropdown">
+            <!--Data from Js-->
+          </div>
+        </header>
+        <main>
+          <ul id="list_of_countries">
+            <!--Data from Js-->
+          </ul>
+        </main>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
